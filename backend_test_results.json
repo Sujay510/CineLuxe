@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-12-19T11:05:15.335082",
+  "total_tests": 12,
+  "passed_tests": 12,
+  "success_rate": "100.0%",
+  "test_details": [
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get All Movies",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Movie Details",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Movie Showtimes",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Showtime Seats",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Create Booking",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get User Bookings",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Specific Booking",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Invalid Movie ID (404)",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Invalid Showtime ID (404)",
+      "success": true,
+      "details": ""
+    }
+  ]
+}
