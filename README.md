@@ -1,6 +1,6 @@
 # CineLuxe - Movie Ticket Booking App
 
-A full-stack movie ticket booking application built with FastAPI (Python) and React.
+An AI based full-stack movie ticket booking application built with FastAPI (Python) and React.
 
 ## Features
 
