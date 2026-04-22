@@ -95,7 +95,6 @@ Create a `.env` file in the `backend/` directory:
 
 ```env
 MONGO_URL=mongodb://localhost:27017
-DB_NAME=cineluxe_db
 CORS_ORIGINS=http://localhost:3000
 JWT_SECRET_KEY=your-secret-key-here
 ```
