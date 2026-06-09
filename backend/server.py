@@ -255,12 +255,10 @@ async def get_seats(showtime_id: str):
             seat_id = f"{row}-{num}"
             status = SeatStatus.BOOKED if seat_id in booked_seat_ids else SeatStatus.AVAILABLE
             
-            if row in ['A', 'B']:
+            if row in ['H']:
                 price = showtime['price'] + 50
-            elif row in ['C', 'D', 'E']:
-                price = showtime['price']
             else:
-                price = showtime['price'] - 30
+                price = showtime['price']
             
             row_seats.append(Seat(
                 row=row,
