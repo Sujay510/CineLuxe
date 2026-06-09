@@ -43,7 +43,7 @@ All assumptions (seat width, row pitch, initial screen distance) are based on av
 - **Movie browsing** : catalog with genre, rating, duration, and poster
 - **Showtime selection** : multiple theaters and time slots per movie
 - **Seat booking** : interactive seat map with real-time availability from MongoDB
-- **Dynamic pricing** : front rows (A/B) at premium, back rows at discount
+- **Dynamic pricing** : Last row is consits of premium recliner seats with a small increase in price compared to other rows.
 - **Geometric seat preview** : trigonometric view simulation per seat (see above)
 - **User auth** : register, login, JWT-protected routes, 7-day token expiry
 - **Booking history** : per-user booking records with full show details
