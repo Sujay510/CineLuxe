@@ -11,6 +11,7 @@ import MyBookingsPage from "@/pages/MyBookingsPage";
 import AuthPage from "@/pages/AuthPage";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
+import React from "react";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 export const API = `${BACKEND_URL}/api`;
@@ -85,5 +86,5 @@ function App() {
   );
 }
 
-import React from "react";
+
 export default App;
