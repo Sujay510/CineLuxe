@@ -14,14 +14,16 @@ export default function SeatPreview({ seat, totalRows }) {
   }
 
   const rowIndex = seat.row.charCodeAt(0) - 65;
-  const centerCol = 6;
-  const rotateY = (seat.number - centerCol) * 2;
+  const centerCol = 14;
+  const seatOffset = (seat.number - centerCol) * 0.5; 
+  const rowDistance = 4 + rowIndex;                  
+  const rotateY = Math.atan2(seatOffset, rowDistance) * (180 / Math.PI);
   const scale = 1 - (rowIndex * 0.04);
   const brightness = 1 - (rowIndex * 0.03);
 
   let viewQuality = 'Excellent View';
   let viewColor = 'text-green-500';
-  
+
   if (rowIndex <= 1) {
     viewQuality = 'Front Row - Close View';
     viewColor = 'text-blue-500';
