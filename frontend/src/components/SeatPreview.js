@@ -14,8 +14,8 @@ export default function SeatPreview({ seat, totalRows }) {
   }
 
   const rowIndex = seat.row.charCodeAt(0) - 65;
-  const centerCol = 14;
-  const seatOffset = (seat.number - centerCol) * 0.5; 
+  const centerCol = 6;
+  const seatOffset = (centerCol - seat.number) * 0.5; 
   const rowDistance = 4 + rowIndex;                  
   const rotateY = Math.atan2(seatOffset, rowDistance) * (180 / Math.PI);
   const scale = 1 - (rowIndex * 0.04);
@@ -70,7 +70,7 @@ export default function SeatPreview({ seat, totalRows }) {
         <div className="flex justify-between">
           <span>Viewing Angle:</span>
           <span className="font-semibold">
-            {Math.abs(seat.number - centerCol) <= 2 ? 'Center' : 'Side'}
+            {seat.number >= 5 && seat.number <= 8 ? 'Center' : 'Side'}
           </span>
         </div>
       </div>
